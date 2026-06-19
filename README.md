@@ -62,7 +62,7 @@ Un filtre final (`age > 1 AND age < 200`) écarte les propriétaires avec des da
 | `date_deces` | Date de décès trouvée dans le fichier INSEE |
 | `deces_recent` | `true` si le décès date de moins de 3 ans |
 | `deces_ancien` | `true` si le décès date de plus de 10 ans |
-| `gparbat` | Indicateur parcelle bâtie (`B`) ou non bâtie (`N`) |
+| `gparbat` | Indicateur parcelle bâtie (`1`) ou non bâtie (NULL) |
 
 ---
 
