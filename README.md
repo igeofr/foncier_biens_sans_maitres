@@ -4,7 +4,7 @@
 
 Cette requête SQL (PostgreSQL / PostGIS) identifie les **parcelles cadastrales dont le propriétaire enregistré est décédé**, en croisant les données fiscales MAJIC avec le fichier national des décès de l'INSEE.
 
-Elle est destinée à alimenter une vue cartographique permettant de repérer des biens fonciers potentiellement en attente de succession ou en déshérence.
+Elle est destinée à alimenter une vue cartographique permettant de repérer des biens fonciers **potentiellement en attente de succession ou en déshérence**.
 
 ---
 
@@ -17,6 +17,10 @@ Elle est destinée à alimenter une vue cartographique permettant de repérer de
 | `s_majic` | `proprietaire` | Propriétaires issus des fichiers fiscaux MAJIC |
 | `s_majic` | `nb_10_parcelle` | Lien parcelle ↔ propriétaire, contenance, adresse |
 | `ref_insee` | `personnes_deces` | Fichier national des décès INSEE |
+
+
+> [!WARNING]  
+> La structuration des données est bien évidemment à adapter à votre modèle de données. Nous concernant, les données du cadastre ainsi que les données MAJIC repose sur le [modèle suivant](http://documentation.veremes.net/majic/index.html).
 
 ---
 
