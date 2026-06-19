@@ -57,7 +57,7 @@ Un filtre final (`age > 1 AND age < 200`) écarte les propriétaires avec des da
 | `id_sec` | Identifiant composite de la section (`id_com + pre + section`) |
 | `commune` | Nom de la commune |
 | `recherche` | Chaîne de recherche textuelle (`section parcelle commune`) |
-| `contenance` | Surface cadastrale en m² (sans zéros de tête) |
+| `contenance` | Surface cadastrale en m² |
 | `geom` | Géométrie MultiPolygon, SRID 2154 (Lambert-93) |
 | `date_deces` | Date de décès trouvée dans le fichier INSEE |
 | `deces_recent` | `true` si le décès date de moins de 3 ans |
